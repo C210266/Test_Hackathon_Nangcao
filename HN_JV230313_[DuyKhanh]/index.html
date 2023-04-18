@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <h2>Thông tin học viên</h2>
+            <form action="" id="form">
+                <ul>
+                    <li><label for="name">Họ và tên</label>
+                        <input type="text" id="name" placeholder="Vui lòng nhập tên">
+                    </li>
+
+                    <li> <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Vui lòng nhập email">
+                    </li>
+                    <li> <label for="phone">Số điện thoại</label>
+                        <input type="text" id="phone" placeholder="Vui lòng nhập số điện thoai">
+                    </li>
+                    <li> <label for="street">Quê quán</label>
+                        <input type="text" id="street" placeholder="Vui lòng nhập địa chỉ ">
+                    </li>
+                    <li>
+                        <label>Giới tính</label>
+                        <div>
+                            <input type="radio" name="gender" id="gender_Male" value="Male" checked />
+                            <label for="gender_Male">Nam</label>
+                            <input type="radio" name="gender" id="gender_Female" value="Female" />
+                            <label for="gender_Female">Nữ</label>
+                        </div>
+
+
+                    </li>
+
+
+                </ul>
+                <button class="btn">Lưu lại</button>
+
+            </form>
+        </div>
+        <div class="container2">
+            <div class="info-search">
+                <h2>Danh sách học viên</h2>
+                <label for="search">Tim kiem ten hoc vien</label>
+
+                <input type="text" id="search">
+                <button>Search</button>
+
+            </div>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Học và tên</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Gender</th>
+                    <th>Hành động</th>
+                    <th>
+                        <button id="sapxep">Sắp xếp(alpha b)</button>
+                    </th>
+                </tr>
+            </table>
+            <table id="table">
+                <tr id="tr">
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
